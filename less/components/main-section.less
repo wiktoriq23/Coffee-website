@@ -1,0 +1,64 @@
+@import 'var.less';
+
+.main-section {
+    background-image: url("https://mobirise.com/html-templates/ecommerce/assets/images/background11-1920x1269.jpg");
+    padding: 100px 10px 0px 10px;
+    text-align: center;
+    color: #fff;
+    background-position: 50% 50%; // da se pokaje po horizontala i vertikala v centyra
+    background-size: cover; // da se vmesti vuv tezi razmeri i da se pokaje cqlata
+    background-attachment: scroll; //oznachava che shte se skrolva nadolu
+
+    &-desc {
+    line-height: 25px; // razstoqnie mejdu redovete na teksta//
+    margin-bottom: 50px;
+     }
+
+     &-title {
+         font-size: 35px;
+         margin-top: 0;
+
+         @media only screen and (min-width:@mobile) {
+             font-size: 45px;
+         }
+     }
+     &-list{
+         margin-top: 120px;
+
+        @media only screen and (min-width:@mobile) {
+            display: flex;
+            margin: 120px auto 0 auto;
+            max-width: 1200px;
+             }
+
+         p{
+             color: @color-silver; 
+             max-width: 70%;
+             margin: 0 auto;
+         }
+         h4{
+             font-size: 16px;
+             color: black;
+         }
+
+     }
+
+     &-item {
+         padding: 40px 10px 60px 10px;
+         line-height: 25px;
+
+         img{
+             width: 48px;
+         }
+
+         &.bg-white {
+             background-color: white;
+         }
+
+         &.bg-silver {
+             background-color: #efefef;
+             
+         }
+     }
+}
+
